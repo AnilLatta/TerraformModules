@@ -1,0 +1,10 @@
+variable "vasso" {}
+variable "vmbastion" {}
+variable "vbassub" {}
+variable "vnic" {}
+variable "vnsg" {}
+variable "vpip" {}
+variable "vrgs" {}
+variable "vsubnet" {}
+variable "vmlinux" {}
+variable "vnet" {}
