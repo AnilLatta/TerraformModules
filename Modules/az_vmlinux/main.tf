@@ -5,13 +5,9 @@ resource "azurerm_linux_virtual_machine" "vmlinux" {
   location              = each.value.location
   size                  = each.value.size
   admin_username        = each.value.admin_username
+  admin_password        = each.value.admin_password
+  disable_password_authentication = each.value.disable_password_authentication
   network_interface_ids = each.value.network_interface_ids
-
-
-  admin_ssh_key {
-   username   = each.value.admin_ssh_key.username
-    public_key = each.value.admin_ssh_key.public_key
-  }
 
   os_disk {
     caching              = each.value.os_disk.caching
