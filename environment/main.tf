@@ -38,24 +38,29 @@ module "nic" {
 }
 
 #create association
+
 module "association" {
+    depends_on = [ module.nsg, module.vsubnet ]
     source ="../Modules/az_association"
     vasso =var.vasso
 }
 #create bastion_subnet
 
 module "bastion_subnet" {
+    depends_on = [ module.rgs ]
     source = "../Modules/az_bastion_subnet"
     vbassub = var.vbassub
 }
 # create publicip
 module "publicip" {
+    depends_on = [ module.rgs ]
     source = "../Modules/az_publicip"
     vpip = var.vpip
 }
 
 #create bastion
 module "bastion" {
+    depends_on = [ module.bastion_subnet ]
     source = "../Modules/az_bastion"
     vmbastion = var.vmbastion
   }
@@ -63,12 +68,14 @@ module "bastion" {
 #create VMWin
 
 module "vmwin" {
+    depends_on = [ module.nic ]
     source = "../Modules/az_win"
     vmwin = var.vmwin
   
 }
 #create vmlinux
 module "vmlinux" {
+    depends_on = [ module.nic ]
     source = "../Modules/az_vmlinux"
     vmlinux = var.vmlinux
 }
