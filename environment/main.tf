@@ -2,7 +2,7 @@
 
 module "rgs" {
     source = "../Modules/az_rg"
-    vrgs =var.vrgs
+    vrgs = var.vrgs
 }
 
 #create vnet
@@ -40,17 +40,18 @@ module "nic" {
 #create association
 module "association" {
     source ="../Modules/az_association"
-    vasso =var.asso
+    vasso =var.vasso
 }
 #create bastion_subnet
+
 module "bastion_subnet" {
     source = "../Modules/az_bastion_subnet"
-    vbas = var.bastion_subnet
+    vbassub = var.vbassub
 }
 # create publicip
 module "publicip" {
     source = "../Modules/az_publicip"
-    vpublicip = var.publicip
+    vpip = var.vpip
 }
 
 #create bastion
@@ -62,7 +63,7 @@ module "bastion" {
 #create VMWin
 
 module "vmwin" {
-    source = "../Modules/az_vmwin"
+    source = "../Modules/az_win"
     vmwin = var.vmwin
   
 }
