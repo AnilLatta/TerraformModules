@@ -47,7 +47,7 @@ module "association" {
 #create bastion_subnet
 
 module "bastion_subnet" {
-    depends_on = [ module.rgs ]
+    depends_on = [ module.vnets]
     source = "../Modules/az_bastion_subnet"
     vbassub = var.vbassub
 }
