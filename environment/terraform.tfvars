@@ -177,7 +177,7 @@ vmwin = {
     size                  = "Standard_D2_v5"
     admin_username        = "adminuser"
     admin_password        = "P@$$w0rd1234!"
-    network_interface_ids = ["/subscriptions/3c54d768-1375-4b24-9f97-79819d9d0e13/resourceGroups/rg1/providers/Microsoft.Network/networkInterfaces/vnic1",]
+    network_interface_ids = ["/subscriptions/3c54d768-1375-4b24-9f97-79819d9d0e13/resourceGroups/rg1/providers/Microsoft.Network/networkInterfaces/vnic1", ]
 
     os_disk = {
       caching              = "ReadWrite"
@@ -196,14 +196,14 @@ vmwin = {
 #az linux
 vmlinux = {
   vmlinux1 = {
-    name                  = "vmlinux"
-    resource_group_name   = "rg2"
-    location              = "japanwest"
-    size                  = "Standard_D2_v5"
-    admin_username        = "adminuser"
-    admin_password        = "P@$$w0rd1234!"
+    name                            = "vmlinux"
+    resource_group_name             = "rg2"
+    location                        = "japanwest"
+    size                            = "Standard_D2_v5"
+    admin_username                  = "adminuser"
+    admin_password                  = "P@$$w0rd1234!"
     disable_password_authentication = false
-    network_interface_ids = ["/subscriptions/3c54d768-1375-4b24-9f97-79819d9d0e13/resourceGroups/rg2/providers/Microsoft.Network/networkInterfaces/vnic2",]
+    network_interface_ids           = ["/subscriptions/3c54d768-1375-4b24-9f97-79819d9d0e13/resourceGroups/rg2/providers/Microsoft.Network/networkInterfaces/vnic2", ]
 
     os_disk = {
       caching              = "ReadWrite"
@@ -218,6 +218,24 @@ vmlinux = {
     }
   }
 }
+#Az_strg_account
+strg = {
+  strg1 = {
+    name                     = "strg1"
+    resource_group_name      = "rg1"
+    location                 = "japaneast"
+    account_tier             = "standard"
+    account_replication_type = "GRS"
+  }
+  strg2 = {
+    name                     = "strg2"
+    resource_group_name      = "rg2"
+    location                 = "japanwest"
+    account_tier             = "standard"
+    account_replication_type = "GRS"
+  }
+}
+
 
 
 

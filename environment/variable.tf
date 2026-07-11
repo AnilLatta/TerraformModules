@@ -9,3 +9,4 @@ variable "vpip" {}
 variable "vmbastion" {}
 variable "vmlinux" {}
 variable "vmwin" {}
+variable "vstrg" {}
