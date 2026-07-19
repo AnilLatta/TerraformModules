@@ -79,6 +79,7 @@ module "vmlinux" {
   source     = "../Modules/az_vmlinux"
   vmlinux    = var.vmlinux
 }
+#create Storage
 module "vstrg" {
   depends_on = [module.rgs]
   source     = "../Modules/az_vstrg"

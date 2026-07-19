@@ -219,16 +219,16 @@ vmlinux = {
   }
 }
 #Az_strg_account
-strg = {
-  strg1 = {
-    name                     = "strg1"
+vstrg = {
+  vstrg1 = {
+    name                     = "strg11907102679"
     resource_group_name      = "rg1"
     location                 = "japaneast"
     account_tier             = "standard"
     account_replication_type = "GRS"
   }
-  strg2 = {
-    name                     = "strg2"
+  vstrg2 = {
+    name                     = "strg21907201769989"
     resource_group_name      = "rg2"
     location                 = "japanwest"
     account_tier             = "standard"
