@@ -224,14 +224,14 @@ vstrg = {
     name                     = "strg11907102679"
     resource_group_name      = "rg1"
     location                 = "japaneast"
-    account_tier             = "standard"
+    account_tier             = "Standard"
     account_replication_type = "GRS"
   }
   vstrg2 = {
     name                     = "strg21907201769989"
     resource_group_name      = "rg2"
     location                 = "japanwest"
-    account_tier             = "standard"
+    account_tier             = "Standard"
     account_replication_type = "GRS"
   }
 }
