@@ -103,7 +103,7 @@ vnic = {
 
     ip_configuration = {
       name                          = "ipconfig1"
-      subnet_id                     = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/vsubnet1"
+      subnet_id                     = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/vsubnet1"
       private_ip_address_allocation = "Dynamic"
     }
   }
@@ -114,7 +114,7 @@ vnic = {
 
     ip_configuration = {
       name                          = "ipconfig2"
-      subnet_id                     = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg2/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/vsubnet2"
+      subnet_id                     = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg2/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/vsubnet2"
       private_ip_address_allocation = "Dynamic"
     }
   }
@@ -123,12 +123,12 @@ vnic = {
 # az_association
 vasso = {
   vasso1 = {
-    subnet_id                 = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/vsubnet1"
-    network_security_group_id = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg1/providers/Microsoft.Network/networkSecurityGroups/nsg1"
+    subnet_id                 = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg1/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/vsubnet1"
+    network_security_group_id = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg1/providers/Microsoft.Network/networkSecurityGroups/nsg1"
   }
   vasso2 = {
-    subnet_id                 = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg2/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/vsubnet2"
-    network_security_group_id = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg2/providers/Microsoft.Network/networkSecurityGroups/nsg2"
+    subnet_id                 = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg2/providers/Microsoft.Network/virtualNetworks/vnet2/subnets/vsubnet2"
+    network_security_group_id = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg2/providers/Microsoft.Network/networkSecurityGroups/nsg2"
   }
 }
 
@@ -162,8 +162,8 @@ vmbastion = {
 
     ip_configuration = {
       name                 = "Bastionip"
-      subnet_id            = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/bastionrg/providers/Microsoft.Network/virtualNetworks/vnetbastion/subnets/AzureBastionSubnet"
-      public_ip_address_id = "/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/bastionrg/providers/Microsoft.Network/publicIPAddresses/bastionpip"
+      subnet_id            = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/bastionrg/providers/Microsoft.Network/virtualNetworks/vnetbastion/subnets/AzureBastionSubnet"
+      public_ip_address_id = "/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/bastionrg/providers/Microsoft.Network/publicIPAddresses/bastionpip"
     }
   }
 }
@@ -177,7 +177,7 @@ vmwin = {
     size                  = "Standard_D2_v5"
     admin_username        = "adminuser"
     admin_password        = "P@$$w0rd1234!"
-    network_interface_ids = ["/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg1/providers/Microsoft.Network/networkInterfaces/vnic1", ]
+    network_interface_ids = ["/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg1/providers/Microsoft.Network/networkInterfaces/vnic1", ]
 
     os_disk = {
       caching              = "ReadWrite"
@@ -203,7 +203,7 @@ vmlinux = {
     admin_username                  = "adminuser"
     admin_password                  = "P@$$w0rd1234!"
     disable_password_authentication = false
-    network_interface_ids           = ["/subscriptions/5d2dc9cb-891c-4d73-b614-087f520b4fe8/resourceGroups/rg2/providers/Microsoft.Network/networkInterfaces/vnic2", ]
+    network_interface_ids           = ["/subscriptions/980afdcd-4fcb-40e1-9db3-22a10717d506/resourceGroups/rg2/providers/Microsoft.Network/networkInterfaces/vnic2", ]
 
     os_disk = {
       caching              = "ReadWrite"
